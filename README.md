@@ -2,18 +2,14 @@
 
 ## What is it?
 
-An attempt to create a Vim-like workflow in tmux where a chosen key (leader) in addition to few letters can be mapped to perform an action.
+A Vim-like workflow in tmux where a chosen key (leader) in addition to few letters can be mapped to perform an action.
 
+  The below vim configuration maps the key sequences ";ev" to open the vim configuration file and ";sv" loads it.
   - nnoremap ;ev :edit ~/df/init.vim<CR>      " ev - short for edit vimrc
-  - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc
+  - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc  
+  The advantages of this workflow is the usage of letters to help remember the action to be performed which is normally in the form of a verb and object.
   
-  The above vim configuration maps the key sequences ";ev" to open the vim configuration file and ";sv" loads it.
-  
-  The advantages of this workflow the usage of letters to help remember the action, which are normally in the for of verb + object.
-  
-## Installation
-  
-  To install, download the tmux-leader-key bash script and place it somewhere in your PATH.  Make the script executable: "chmod +x tmux-leader-key"
-  
-  Add the belowkey binding to your ~/.tmux.conf file
-     bind-key  -n ,   popup -h 98% -E  'tmux-leader-key ","'
+## Trial without installing
+  - Have tmux 3.2 or higher (requires display-pop feature) running.
+  - curl URL to /tmp/; tmux bind-key 
+  - This will bind the ',' key as the leader key. To produce a ',', you will need to press ',' twice.  You have the option of chosing another leader key.
