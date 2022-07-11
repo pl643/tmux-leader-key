@@ -6,8 +6,14 @@ A Vim-like workflow in tmux where a chosen key (leader) in addition to few lette
 
   The below vim configuration maps the key sequences ";ev" to open the vim configuration file and ";sv" loads it.
   - nnoremap ;ev :edit ~/df/init.vim<CR>      " ev - short for edit vimrc
-  - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc  
-  The advantages of this workflow is the usage of letters to help remember the action to be performed which is normally in the form of a verb and object.
+  - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc
+  
+The advantages of this workflow is the usage of letters to help remember the action to be performed which is normally in the form of a verb and object.
+This script include most standard tmux command mappings like:
+  - cw: choose windows
+  - sp: swap pane
+  - sv: split vertically
+You can always add more mappings
   
 ## Trial without installing
   - Have tmux 3.2 or higher (requires display-pop feature) running.
