@@ -8,7 +8,7 @@ I prefer these type of mappings because I can avoid using Control and Alt modifi
 
 tmux-leader-key attemps to creates this workflow when using tmux.
 
-## Istallation
+## Installation
   
   To install, download the tmux-leader-key bash script and place it somewhere in your PATH.  Make the script executable: "chmod +x tmux-leader-key"
   
