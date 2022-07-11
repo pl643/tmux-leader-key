@@ -2,14 +2,14 @@
 
 ## What is it?
 
-A Vim-like workflow in tmux where a chosen key (leader) in addition to few letters can be mapped to perform an action.
+A tmux key-binding and bash script to provide a vim-like workflow for tmux where a chosen key (leader) and few letters can be mapped to perform an action.
 
-  The below vim configuration maps the key sequences ";ev" to open the vim configuration file and ";sv" loads it.
+  The below vim workflow is what this script attempts to simulate in tmux. The key sequence of ";ev" is configured to open the vim configuration file and ";sv" loads it.
   - nnoremap ;ev :edit ~/df/init.vim<CR>      " ev - short for edit vimrc
   - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc
   
 The advantages of this workflow is the usage of letters to help remember the action to be performed which is normally in the form of a verb and object.
-An extra feature in tmux-leader-key not from vim is after the leader key is pressed, a menu is presented of the mappings.  This helps with mappings that are less often used.
+An extra feature in tmux-leader-key not from vim is after the leader key is pressed, a menu is presented of the mappings.  This helps with mappings that are less often used.<br>
 NOTE: If the leader key is a normal key for example a ',' (commma).  You would need to press the ',' a second time to get the ','.
 This script include most standard tmux command mappings like:
   - cw: choose windows
