@@ -9,6 +9,8 @@ A Vim-like workflow in tmux where a chosen key (leader) in addition to few lette
   - nnoremap ;sv :source ~/df/init.vim<CR>    " sv - short for source vimrc
   
 The advantages of this workflow is the usage of letters to help remember the action to be performed which is normally in the form of a verb and object.
+An extra feature in tmux-leader-key not from vim is after the leader key is pressed, a menu is presented of the mappings.  This helps with mappings that are less often used.
+NOTE: If the leader key is a normal key for example a ',' (commma).  You would need to press the ',' a second time to get the ','.
 This script include most standard tmux command mappings like:
   - cw: choose windows
   - sp: swap pane
